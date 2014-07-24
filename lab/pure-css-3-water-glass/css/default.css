@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; border: 0; text-decoration: none; }
+#glass{ position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding: 200px; width: 0px; height: 0px; display: inline; border-radius: 300px; background: #3598FE; border: 5px solid #fff; -webkit-animation-duration: 3s; -webkit-animation-name: first; -webkit-animation-iteration-count: infinite;}
+#glass:before{ position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding: 190px; background:  rgb(100,50,50); width: 0px; border-radius: 300px; height: 0px; content:" "; -webkit-animation-duration: 3s; -webkit-animation-name: second; -webkit-animation-iteration-count: 1; -webkit-animation-fill-mode: forwards}
+#glass:after{ position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding: 170px; background: rgb(0,0,0); width: 0px; border-radius: 300px; height: 0px; content:" "; -webkit-animation-duration: 3s; -webkit-animation-name: third; -webkit-animation-iteration-count: 1; -webkit-animation-fill-mode: forwards}
+
+@-webkit-keyframes second {
+  from {
+    padding: 190px;
+  }
+
+  to {
+    padding: 200px;
+  }
+}
+@-webkit-keyframes third {
+  from {
+    padding: 170px;
+  }
+
+  to {
+    padding: 80px;
+  }
+}
